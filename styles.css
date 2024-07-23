@@ -3,30 +3,29 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F9FA; /* Light background color for better readability */
-    color: #333; /* Darker text color for better contrast */
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background-color: #0056A1; /* Dark blue background for header */
+    background-color: #1F1F1F;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 4px solid #003366; /* Slightly darker border for header */
+    border-bottom: 2px solid #333;
 }
 
 header h1 {
     margin: 0;
-    color: #FFFFFF; /* White text color for header */
-    font-size: 2em; /* Larger font size for header title */
+    color: #1E90FF;
 }
 
 /* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0; /* Add some margin at the top */
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -36,40 +35,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF; /* White text color for nav links */
+    color: #1E90FF;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
     border-radius: 8px;
 }
 
 nav ul li a:hover {
-    background-color: #003366; /* Darker blue background on hover */
-    color: #FFFFFF; /* Keep white text color on hover */
+    background-color: #333;
 }
 
 /* Main Content Styles */
 main {
-    padding: 40px; /* More padding for better spacing */
-    color: #333; /* Darker text color for better contrast */
+    padding: 20px;
+    color: #333333;
 }
 
-section {
-    margin-bottom: 40px;
-    background-color: #FFFFFF; /* White background for sections */
-    padding: 30px; /* More padding for better spacing */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #0056A1; /* Dark blue color for section titles */
-    margin-top: 0;
-    font-size: 1.8em; /* Larger font size for section titles */
-}
-
-/* Product Card Styles */
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -77,8 +60,8 @@ section h2 {
 }
 
 .product-card {
-    background-color: #FFFFFF;
-    border: 1px solid #CED4DA;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -86,12 +69,6 @@ section h2 {
     width: calc(33% - 40px); /* Adjust the width as needed */
     box-sizing: border-box;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -102,7 +79,7 @@ section h2 {
 
 .product-card h3 {
     margin: 10px 0;
-    color: #0056A1; /* Dark blue color for product titles */
+    color: #333333;
 }
 
 .product-description {
@@ -112,87 +89,40 @@ section h2 {
 
 .product-price {
     font-size: 1.2em;
-    color: #0056A1; /* Dark blue color for product prices */
+    color: #1E90FF;
     margin: 10px 0;
 }
 
 .product-link {
     display: inline-block;
     padding: 10px 20px;
-    color: #FFFFFF; /* White text color for product links */
-    background-color: #0056A1; /* Dark blue background for product links */
+    color: #ffffff;
+    background-color: #1E90FF;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
 .product-link:hover {
-    background-color: #003366; /* Darker blue background on hover */
-}
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-    color: #0056A1; /* Dark blue color for form labels */
-}
-
-form input, form textarea, form button {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #CED4DA; /* Light gray border for inputs */
-    border-radius: 8px;
-    background-color: #FFFFFF; /* White background for inputs */
-    color: #333; /* Dark text color for inputs */
-    font-size: 16px;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #0056A1; /* Dark blue border on focus */
-    outline: none; /* Remove default outline */
-}
-
-form button {
-    background-color: #0056A1; /* Dark blue background for button */
-    border: none;
-    cursor: pointer;
-    color: #FFFFFF; /* White text color for button */
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #003366; /* Darker blue background on hover */
+    background-color: #7B48E1;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #0056A1; /* Dark blue background for footer */
-    color: #FFFFFF; /* White text color for footer */
+    background-color: #1F1F1F;
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0; /* More padding for footer */
-    border-top: 4px solid #003366; /* Slightly darker border for footer */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #333;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .product-card {
         width: calc(50% - 40px); /* Adjust for smaller screens */
-    }
-
-    main {
-        padding: 20px; /* Less padding for smaller screens */
     }
 }
 
