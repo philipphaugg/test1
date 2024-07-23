@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #1F1F1F;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    color: #1E90FF;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    color: #333333;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 40px); /* Adjust the width as needed */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #333333;
+}
+
+.product-description {
+    color: #666666;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #1E90FF;
+    margin: 10px 0;
+}
+
+.product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #1E90FF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #7B48E1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1F1F1F;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 40px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 40px); /* Full width for very small screens */
+    }
+}
