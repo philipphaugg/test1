@@ -69,6 +69,67 @@ section h2 {
     font-size: 1.8em; /* Larger font size for section titles */
 }
 
+/* Product Card Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 40px); /* Adjust the width as needed */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #0056A1; /* Dark blue color for product titles */
+}
+
+.product-description {
+    color: #666666;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #0056A1; /* Dark blue color for product prices */
+    margin: 10px 0;
+}
+
+.product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFFFFF; /* White text color for product links */
+    background-color: #0056A1; /* Dark blue background for product links */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #003366; /* Darker blue background on hover */
+}
+
 /* Form Styles */
 form {
     display: flex;
@@ -126,7 +187,17 @@ footer {
         margin: 10px 0;
     }
 
+    .product-card {
+        width: calc(50% - 40px); /* Adjust for smaller screens */
+    }
+
     main {
         padding: 20px; /* Less padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 40px); /* Full width for very small screens */
     }
 }
