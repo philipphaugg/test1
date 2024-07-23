@@ -3,29 +3,30 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* Background color is white */
-    color: #1E90FF;
+    background-color: #F8F9FA; /* Light background color for better readability */
+    color: #333; /* Darker text color for better contrast */
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background-color: #1F1F1F;
+    background-color: #0056A1; /* Dark blue background for header */
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 4px solid #003366; /* Slightly darker border for header */
 }
 
 header h1 {
     margin: 0;
-    color: #1E90FF;
+    color: #FFFFFF; /* White text color for header */
+    font-size: 2em; /* Larger font size for header title */
 }
 
 /* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0; /* Add some margin at the top */
     display: flex;
     justify-content: center;
 }
@@ -35,35 +36,37 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1E90FF;
+    color: #FFFFFF; /* White text color for nav links */
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 8px;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #003366; /* Darker blue background on hover */
+    color: #FFFFFF; /* Keep white text color on hover */
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px;
-    color: #FFFFFF; /* Main text color changed to white */
+    padding: 40px; /* More padding for better spacing */
+    color: #333; /* Darker text color for better contrast */
 }
 
 section {
     margin-bottom: 40px;
-    background-color: #333333; /* Section background color changed to dark gray */
-    padding: 20px;
+    background-color: #FFFFFF; /* White background for sections */
+    padding: 30px; /* More padding for better spacing */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #1E90FF;
+    color: #0056A1; /* Dark blue color for section titles */
     margin-top: 0;
+    font-size: 1.8em; /* Larger font size for section titles */
 }
 
 /* Form Styles */
@@ -74,40 +77,43 @@ form {
 
 form label {
     margin-bottom: 5px;
-    color: #1E90FF;
+    color: #0056A1; /* Dark blue color for form labels */
 }
 
 form input, form textarea, form button {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #333;
+    border: 1px solid #CED4DA; /* Light gray border for inputs */
     border-radius: 8px;
-    background-color: #2A2A2A;
-    color: #1E90FF;
+    background-color: #FFFFFF; /* White background for inputs */
+    color: #333; /* Dark text color for inputs */
     font-size: 16px;
 }
 
+form input:focus, form textarea:focus {
+    border-color: #0056A1; /* Dark blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
 form button {
-    background-color: #1E90FF;
+    background-color: #0056A1; /* Dark blue background for button */
     border: none;
     cursor: pointer;
+    color: #FFFFFF; /* White text color for button */
     transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #7B48E1;
+    background-color: #003366; /* Darker blue background on hover */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #1F1F1F;
-    color: #1E90FF;
+    background-color: #0056A1; /* Dark blue background for footer */
+    color: #FFFFFF; /* White text color for footer */
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 2px solid #333;
+    padding: 20px 0; /* More padding for footer */
+    border-top: 4px solid #003366; /* Slightly darker border for footer */
 }
 
 /* Responsive Design */
@@ -118,5 +124,9 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    main {
+        padding: 20px; /* Less padding for smaller screens */
     }
 }
