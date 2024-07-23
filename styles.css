@@ -3,8 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #1E90FF
+    background-color: #FFFFFF; /* Changed background color to white */
+    color: #1E90FF;
     line-height: 1.6;
 }
 
@@ -50,12 +50,12 @@ nav ul li a:hover {
 /* Main Content Styles */
 main {
     padding: 20px;
-    color:  #E2DFD2
+    color: #1F1F1F; /* Changed main text color to dark for better contrast on white background */
 }
 
 section {
     margin-bottom: 40px;
-    background-color: #1E1E1E;
+    background-color: #F8F8F8; /* Light background for sections to distinguish them from the main background */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ form input, form textarea, form button {
     margin-bottom: 10px;
     border: 1px solid #333;
     border-radius: 8px;
-    background-color: #2A2A2A;
+    background-color: #F0F0F0; /* Light background for form elements */
     color: #1E90FF;
     font-size: 16px;
 }
